@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#countdown{
+    padding-top: 35px;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    gap: 30px;
+}
+
+
+.tag h1 .time{
+    background-color: #6a1b9a;
+    border-radius: 20%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 35px;
+    font-size: 3.2rem;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+.tag h1 .time:hover{
+    background-color: white;
+    color: black;
+
+}
+
+
+
+.tag p{
+    margin-top: 25px;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.tag h1 .points{
+    font-size: 1.8em;
+    color: white;
+}
+
+
+
+
+
+@media screen and (max-width:964px){
+    .tag h1 .time{
+        padding: 25px;
+        border-radius: 10px;
+        font-size: 2.2rem;
+    }
+
+    .tag p{
+        font-size: 0.8rem;
+    }
+
+    #sec{
+        display: none;
+        visibility: hidden;
+
+    }
+
+    
+}
+
+@media screen and (max-width:364px){
+
+    #countdown{
+        gap: 5px;
+        display: flex;
+
+    }
+
+    .tag h1 .time{
+        padding: 18px;
+        border-radius: 10px;
+        font-size: 1.6rem;
+    }
+
+    .tag p{
+        font-size: 0.3rem;
+    }
+
+
+}
+
