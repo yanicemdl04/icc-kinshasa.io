@@ -175,11 +175,11 @@
                 <div class="col-md-8 fs-4">
                   <div id="countdown">
                     <div class="tag">
-                      <h1><span class="time">-</span> <span class="points">:</span> </h1>
+                      <h1><span class="time">-</span> <span class="points"  id="sec">:</span> </h1>
                       <p>JOURS</p>
                   </div>
                   <div class="tag">
-                      <h1><span class="time">-</span> <span class="points">:</span> </h1>
+                      <h1><span class="time">-</span> <span class="points"  id="sec">:</span> </h1>
                       <p>HEURES</p>
                   </div>
                   <div class="tag" id="min">
@@ -196,7 +196,7 @@
           </div>
     
         <script>
-                      let countdown = new Date("November 5, 2023 07:30:00").getTime()
+                      let countdown = new Date("November 12, 2023 07:30:00").getTime()
             console.log(countdown)
     
             let x = setInterval(function () {
@@ -211,11 +211,11 @@
                 document.getElementById("countdown").innerHTML = 
                 `
                 <div class="tag">
-                    <h1><span class="time">${days}</span> <span class="points">:</span> </h1>
+                    <h1><span class="time">${days}</span> <span class="points"  id="sec">:</span> </h1>
                     <p>JOURS</p>
                 </div>
                 <div class="tag">
-                    <h1><span class="time">${hours}</span> <span class="points">:</span> </h1>
+                    <h1><span class="time">${hours}</span> <span class="points"  id="sec">:</span> </h1>
                     <p>HEURES</p>
                 </div>
                 <div class="tag" id="min">
