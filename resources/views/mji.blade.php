@@ -30,7 +30,7 @@
       <div class="container-fluid">
   
         <div class="logo">
-          <a href="index.blade.php"> <img src="pictures/logoicc.PNG" style="height: 50px; width: 50px;"> </a> <p>Kinshasa</p>
+          <a href="/index"> <img src="pictures/logoicc.PNG" style="height: 50px; width: 50px;"> </a> <p>Kinshasa</p>
       </div>
   
     <div class="menu">
@@ -47,7 +47,7 @@
         });
           </script>
         </li>
-          <li><a href="index.blade.php">ACCUEIL</a></li>
+          <li><a href="/index">ACCUEIL</a></li>
           <li class="nav-item dropdown">
             <p class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-current="page">A PROPOS</p>
             <ol class="dropdown-menu">

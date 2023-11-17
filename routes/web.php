@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\View\View;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +15,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('formation');
+});
+
+Route::get('/', function () {
+    return view('mji');
+});
+
+Route::get('/', function (): view {
     return view('index');
 });

@@ -26,7 +26,7 @@
         <div class="container-fluid">
     
           <div class="logo">
-            <a href="index.blade.php"> <img src="pictures/logoicc.PNG" style="height: 50px; width: 50px;"> </a> <p>Kinshasa</p>
+            <a href="/index"> <img src="pictures/logoicc.PNG" style="height: 50px; width: 50px;"> </a> <p>Kinshasa</p>
         </div>
     
       <div class="menu">
@@ -43,7 +43,7 @@
               });
             </script>
           </li>
-            <li><a href="index.blade.php">ACCUEIL</a></li>
+            <li><a href="/index">ACCUEIL</a></li>
             <li class="nav-item dropdown">
               <p class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-current="page">A PROPOS</p>
               <ol class="dropdown-menu">
@@ -239,7 +239,7 @@
                           <h5>Quick Contact</h5>
                           <div class="kilimanjaro_single_contact_info">
                               <h5>Phone:</h5>
-                              <p>+255 255 54 53 52 <br> +255 255 53 52 51</p>
+                              <p><br> </p>
                           </div>
                           <div class="kilimanjaro_single_contact_info">
                               <h5>Email:</h5>

@@ -28,10 +28,10 @@
     <div class="container-fluid">
 
       <div class="logo">
-        <a href="index.blade.php"> <img src="pictures/logoicc.PNG" style="height: 50px; width: 50px;"> </a> <p>Kinshasa</p>
+        <a href="/index"> <img src="pictures/logoicc.PNG" style="height: 50px; width: 50px;"> </a> <p>Kinshasa</p>
     </div>
 
-  <div class="menu">
+    <div class="menu">
     <ul>
       <li class="ferme"><a onclick="close()">FERMER</a>
         <script>
@@ -45,7 +45,7 @@
       });
         </script>
       </li>
-        <li><a href="index.blade.php">ACCUEIL</a></li>
+        <li><a href="/index">ACCUEIL</a></li>
         <li class="nav-item dropdown">
           <p class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-current="page">A PROPOS</p>
           <ol class="dropdown-menu">
@@ -57,7 +57,7 @@
         </li>
         <li><a href="#">MEDITATION</a></li>
         <li><a href="#">DONATION</a></li>
-        <li><a href="formation.blade.php">FORMATION</a></li>
+        <li><a href="/formation">FORMATION</a></li>
         <li class="nav-item dropdown">
           <p class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-current="page">BATISSEURS</p>
           <ol class="dropdown-menu">
@@ -68,7 +68,6 @@
         </li>
     </ul>
     </div>
-
 
     <!-- menu responsive -->
     <div class="toggle_menu"> <img src="pictures/menu h.png" height="35px" width="35px" alt="menu hamburger"> </div>
@@ -274,7 +273,7 @@
         </div>
         <div class="col d-flex align-items-start">
           <div>
-            <a href="formation.blade.php"><img src="icon et logo/formationicon.png" ></a>
+            <a href="/resources/views/formation.blade.php"><img src="icon et logo/formationicon.png" ></a>
             <p>formation</p>
           </div>
         </div>
@@ -386,7 +385,7 @@
           <div class="fadedbox">
             <div class="title text" style="color: white;">Ministère des Jeunes d'impact
               <div class="btn">
-                <button class="btn btn-primary btn-lg" type="button"><a href="mji.blade.php" style="color: white;  text-decoration: none; padding: 10px; font-size: 1.3rem; ">Plus</a></button>
+                <button class="btn btn-primary btn-lg" type="button"><a href="/resources/views/mji.blade.php" style="color: white;  text-decoration: none; padding: 10px; font-size: 1.3rem; ">Plus</a></button>
               </div>
           </div>
           </div>
@@ -581,7 +580,7 @@
                       <h5>Quick Contact</h5>
                       <div class="kilimanjaro_single_contact_info">
                           <h5>Phone:</h5>
-                          <p>+255 255 54 53 52 <br> +255 255 53 52 51</p>
+                          <p>082 922 11 73<br> </p>
                       </div>
                       <div class="kilimanjaro_single_contact_info">
                           <h5>Email:</h5>
