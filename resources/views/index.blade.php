@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICC Kinshasa</title>
+    <link rel="shortcut icon" href="pictures/logoicc.PNG" />
+    <script src="https://kit.fontawesome.com/3796f395ff.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/universal/2-0-1/vendor/font-awesome/css/font-awesome.min.css">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/jumbotron/">
+    <link rel="stylesheet" href="css/impact.css">
+    <link rel="stylesheet" href="css/countdown.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+        
+</head>
+
+<header  class="lineaire-simple">
+
+  
+  <nav class="navbar navbar-expand-lg bg-body-tertiary rounded" aria-label="Twelfth navbar example" id="header">
+    <div class="container-fluid">
+
+      <div class="logo">
+        <a href="index.blade.php"> <img src="pictures/logoicc.PNG" style="height: 50px; width: 50px;"> </a> <p>Kinshasa</p>
+    </div>
+
+  <div class="menu">
+    <ul>
+      <li class="ferme"><a onclick="close()">FERMER</a>
+        <script>
+      const navbarLink = document.querySelector(".ferme");
+
+      // Ajouter un écouteur d'événements sur l'élément
+      navbarLink.addEventListener("click", () => {
+        // Fermer le menu déroulant
+        const navbarDropdown = document.querySelector(".menu");
+        navbarDropdown.setAttribute("hidden", true);
+      });
+        </script>
+      </li>
+        <li><a href="index.blade.php">ACCUEIL</a></li>
+        <li class="nav-item dropdown">
+          <p class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-current="page">A PROPOS</p>
+          <ol class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Qui sommes-nous</a></li>
+            <li><a class="dropdown-item" href="#">Nos programmes</a></li>
+            <li><a class="dropdown-item" href="#">Nos cellules</a></li>
+            <li><a class="dropdown-item" href="#">Nos extensions</a></li>
+          </ol>
+        </li>
+        <li><a href="#">MEDITATION</a></li>
+        <li><a href="#">DONATION</a></li>
+        <li><a href="formation.blade.php">FORMATION</a></li>
+        <li class="nav-item dropdown">
+          <p class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-current="page">BATISSEURS</p>
+          <ol class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Présentations du projet</a></li>
+            <li><a class="dropdown-item" href="#">Information génerale</a></li>
+            <li><a class="dropdown-item" href="#">Contribuer</a></li>
+          </ol>
+        </li>
+    </ul>
+    </div>
+
+
+    <!-- menu responsive -->
+    <div class="toggle_menu"> <img src="pictures/menu h.png" height="35px" width="35px" alt="menu hamburger"> </div>
+<script>
+  const menu = document.querySelector(".toggle_menu")
+  const navlinks = document.querySelector(".menu")
+
+  menu.addEventListener('click', ()=>(
+    navlinks.classList.toggle('mobile-menu')
+  ))
+</script>
+    
+    </div>
+  </nav>
+
+        <!-- carousel -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-image: url('pictures/pp5.JPG'); background-position-y: bottom;">
+      <div class="carousel-caption">
+        <h1><strong>I</strong>MPACT
+        </h1>
+
+        <h2>
+          <strong>C</strong>ENTRE
+        </h2>
+
+        <h2>
+          <strong>C</strong>HRETIEN
+        </h2>
+        <p>Une église ou l'amour de Dieu transforme des gens ordinaires en champion</p>
+      </div>
+      </div>
+      <div class="carousel-item" style="background-image: url('pictures/batiment.jpg')">
+      <div class="carousel-caption">
+        <h1 style="color: rgb(233, 233, 233);"><strong>I</strong>MPACT
+        </h1>
+
+        <h2>
+          <strong>C</strong>ENTRE
+        </h2>
+
+        <h2>
+          <strong>C</strong>HRETIEN
+        </h2>
+        <p>"Jesus n'est pas un style de vie, mais plutot un mode de vie"</p>
+      </div>
+      </div>
+      <div class="carousel-item" style="background-image: url('pictures/jeunes.jpg')">
+      <div class="carousel-caption">
+        <h1><strong>I</strong>MPACT
+        </h1>
+
+        <h2>
+          <strong>C</strong>ENTRE
+        </h2>
+
+        <h2>
+          <strong>C</strong>HRETIEN
+        </h2>
+        <p>"Nous formons les racines puissantes d'un arbre solide qui est la reussite en Christ"</p>
+      </div>
+      </div>
+      <div class="carousel-item" style="background-image: url('pictures/septentrion.PNG')">
+        <div class="carousel-caption">
+          <h1><strong>I</strong>MPACT
+          </h1>
+  
+          <h2>
+            <strong>C</strong>ENTRE
+          </h2>
+  
+          <h2>
+            <strong>C</strong>HRETIEN
+          </h2>
+          <p>"Un vent de jeunesse, un souffle nouveau"</p>
+        </div>
+      </div>
+    <div class="carousel-item" style="background-image: url('pictures/pray.jpg')">
+      <div class="carousel-caption">
+      </div>
+    </div>
+  </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+
+
+
+          <!--slide end--> 
+      <div class="cv-container py-4" style="background-color: black; height: 200px;">
+            <div class="row justify-content-around custom-line">
+              <div class="col-md-4 fs-2" id="signal">
+                <p>Temps restant avant le prochain culte</p><a style="background-color: orangered; padding: 10px 15px; color: white;" id="plus">Plus</a>
+              </div>
+                <div class="col-md-8 fs-4">
+                  <div id="countdown">
+                    <div class="tag">
+                      <h1><span class="time">-</span> <span class="points">:</span> </h1>
+                      <p>JOURS</p>
+                  </div>
+                  <div class="tag">
+                      <h1><span class="time">-</span> <span class="points">:</span> </h1>
+                      <p>HEURES</p>
+                  </div>
+                  <div class="tag" id="min">
+                      <h1><span class="time" id="left">-</span> <span class="points" id="sec">:</span> </h1>
+                      <p>MINUTES</p>
+                  </div>
+                  <div class="tag" id="sec">
+                      <h1><span class="time">-</span> <span class="points"</span></h1>
+                      <p>SECONDES</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        <script>
+                      let countdown = new Date("November 26, 2023 07:30:00").getTime()
+            console.log(countdown)
+    
+            let x = setInterval(function () {
+                let now = new Date().getTime()
+                let distance = countdown - now
+    
+                let days = Math.floor(distance / (1000 * 60 * 60 * 24))
+                let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+                let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
+                let seconds = Math.floor((distance % (1000 * 60)) / 1000)
+    
+                document.getElementById("countdown").innerHTML = 
+                `
+                <div class="tag">
+                    <h1><span class="time">${days}</span> <span class="points">:</span> </h1>
+                    <p>JOURS</p>
+                </div>
+                <div class="tag">
+                    <h1><span class="time">${hours}</span> <span class="points">:</span> </h1>
+                    <p>HEURES</p>
+                </div>
+                <div class="tag" id="min">
+                    <h1><span class="time" id="left">${minutes}</span> <span class="points" id="sec">:</span> </h1>
+                    <p>MINUTES</p>
+                </div>
+                <div class="tag" id="sec">
+                    <h1><span class="time">${seconds}</span> <span class="points"></span></h1>
+                    <p>SECONDES</p>
+                </div>
+                `
+    
+                
+            }, 1000);
+    
+            if(distance < 0){
+                clearInterval(x);
+    
+            }
+    
+        </script>
+        </div>
+
+    
+
+</header>
+    <!-- section acceuil home -->
+
+
+     <!-- icon grid -->
+     <div class="cv-container px-4 py-5" id="icon">
+  
+      <div class="row row-cols-3 row-cols-sm-3 row-cols-md-3 row-cols-lg-6 g-6 py-5">
+        <div class="col d-flex align-items-start">
+          <div>
+            <a href="#"><img src="icon et logo/church3.png"></a>
+            <p>Donation</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div>
+            <img src="icon et logo/rdvicon1.png" >
+            <p>Prochain culte</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div>
+            <img src="icon et logo/iconpers.png" >
+            <p>Contact</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div>
+            <a href="formation.blade.php"><img src="icon et logo/formationicon.png" ></a>
+            <p>formation</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div>
+            <img src="icon et logo/bible2.png" >
+            <p>Verset du jour</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div>
+            <img src="icon et logo/plusicon4.png" >
+            <p>En savoir plus</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- accueil et présentation -->
+
+    <div class="container" style="margin-bottom: 50px;">
+      <div class="container">
+        <h1 style="align-items: center; text-align: center; font-size: 4.3em; font-family: 'Hind', sans-serif; margin-top: 40px;"><strong>CONTENU A LA UNE</strong></h1>
+        <h2 style="align-items: center; text-align: center; font-size: 1.5em; color: #6a1b9a; font-family: 'Hind', sans-serif;">Raccourci vers les prédications, vidéos, audios, articles <br> d'enseignement à la une</h2>
+      
+      </div>
+      
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container" id="cartes">
+    
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="200" style="background: url('pictures/ouvrier.jpg') no-repeat; background-size:cover; "></svg>
+                <div class="card-body">
+                  <p class="card-text" style="font-size: 2.5em;">Sers-tu Dieu? Ou te sers-tu de lui?</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button class="btn btn-outline-dark" type="button">LIRE L'ARTICLE</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="200" style="background: url('pictures/mji1.PNG') no-repeat; background-size:cover; "></svg>
+                <div class="card-body">
+                  <p class="card-text" style="font-size: 2.5em;">Ne sois pas un chrétien, mais sois plutot un temoins! </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button class="btn btn-outline-dark" type="button">LIRE L'ARTICLE</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="200" style="background: url('pictures/trophée.PNG') no-repeat; background-size:cover; ">Thumbnail</text></svg>
+                <div class="card-body">
+                  <p class="card-text" style="font-size: 2.5em;">Devenir une étoile brillante, pas une étoile fillante</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button class="btn btn-outline-dark" type="button">LIRE L'ARTICLE</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- section les mots du apsteur -->
+
+
+
+
+<!--section horaires et activitéés -->
+<div style="background-color: rgb(243, 243, 243); padding-top: 10px; padding-bottom: 60px;" id="femme">
+  <div class="container">
+    <div>
+      <h1 style="align-items: center; justify-content: center; text-align: center; font-size: 4em; font-family: 'Hind', sans-serif; margin-top: 60px; margin-bottom: 20px;"><strong>NOTRE HORAIRE</strong></h1>
+      <h2 style="align-items: center; text-align: center; font-size: 1.5em; color: #6a1b9a; font-family: 'Hind', sans-serif;">Horaires des principales activitées <br> que vous pouvez retrouvé à ICC</h2>
+
+    </div>
+    <div class="row row-cols-1 row-cols-lg-1 align-items-stretch">
+      <div class="row">
+        <div id="example" class="col-7">
+          <img src="pictures/femme.jpg" alt="tile3" width="100%" height="100%" alt="house" style="border-radius: 5%;"/>
+          <div class="fadedbox">
+            <div class="title text" style="color: white;">Culte des femme d'impact
+              <div class="bd-example-snippet bd-code-snippet"><div class="bd-example m-0 border-0 tooltip-demo">
+                <button button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Chaque mercredi à partir de 13h"><a href="#" style="color: white;  text-decoration: none; padding: 12px; font-size: 1.3rem; ">Plus</a></button>
+              </div></div>
+          </div>
+          </div>
+        </div>
+
+        <div id="example" class="col-5">
+          <img src="pictures/elonga.PNG" alt="tile3" width="100%" height="100%" alt="house" style="border-radius: 5%;"/>
+          <div class="fadedbox">
+            <div class="title text" style="color: white;">Ministère des Jeunes d'impact
+              <div class="btn">
+                <button class="btn btn-primary btn-lg" type="button"><a href="mji.blade.php" style="color: white;  text-decoration: none; padding: 10px; font-size: 1.3rem; ">Plus</a></button>
+              </div>
+          </div>
+          </div>
+        </div>
+
+        <div id="example" class="col-5">
+          <img src="pictures/pleure.PNG" alt="tile3" width="100%" height="100%" alt="house" style="border-radius: 5%;"/>
+          <div class="fadedbox">
+            <div class="title text" style="color: white;">Atmosphère de prière
+                <div class="bd-example-snippet bd-code-snippet"><div class="bd-example m-0 border-0 tooltip-demo">
+                  <button button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Chaque vendredi à partir de 17h"><a href="#" style="color: white;  text-decoration: none; padding: 12px; font-size: 1.3rem; ">Plus</a></button>
+                </div></div>
+          </div>
+          </div>
+        </div>
+
+        <div id="example" class="col-7">
+          <img src="pictures/apdaniel.jpg" alt="tile3" width="100%" height="100%" alt="house" style="border-radius: 5%;"/>
+          <div class="fadedbox">
+            <div class="title text" style="color: white;">Mbongwana tour
+                <div class="bd-example-snippet bd-code-snippet"><div class="bd-example m-0 border-0 tooltip-demo">
+                  <button button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Mouvement d'evangélisation de Kinshasa"><a href="#" style="color: white;  text-decoration: none; padding: 12px; font-size: 1.3rem; ">Plus</a></button>
+                </div></div>
+          </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+        
+
+<!-- icons -->
+
+<div class="container" id="accordeon">
+  <article class="my-3" id="accordion">
+      <div>
+        <h1 style="align-items: center; justify-content: center; text-align: center; font-size: 4.3em; font-family: 'Hind', sans-serif; margin-top: 60px; margin-bottom: 10px;"><strong>FAQ</strong></h1>
+        <h2 style="align-items: center; justify-content: center; text-align: center; font-size: 1.5em; color: #6a1b9a; font-family: 'Hind', sans-serif; margin-bottom: 40px;">Retrouvez quelques questions courantes à propos <br> d'Impact Centre Chretien</h2>
+      </div>
+
+    <div class="row" style="font-size: 1.6em;">
+      <div class="col-md-6">
+        <img src="pictures/celebration.jpg" height="300">
+      </div>
+      <div class="col-md-6">
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example m-0 border-0">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h4 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="font-size: 1.4em; font-family: 'Hind', sans-serif; background-color: #6a1b9a; color: #fff; gap: 15px;">
+                <strong style="font-weight: bolder;">? </strong> Où se trouve l'eglise?
+              </button>
+            </h4>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                L'Eglise Impact Centre Chretien est située au 4449 Av. De la Liberation (Ex 24 Novembre) - KASA VUBU - Kinshasa 243 Kinshasa, République démocratique du Congo</div>
+            </div>
+          </div>
+
+
+          <div class="accordion-item">
+            <h4 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="font-size: 1.4em; font-family: 'Hind', sans-serif; background-color: #6a1b9a; color: #fff;gap: 15px;">
+                <strong style="font-weight: bolder;">? </strong> Comment entrer en contact avec nous?
+              </button>
+            </h4>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body" id="lorem">
+                Vous pouvez vous rendre au bureau de l'Eglise</div>
+            </div>
+          </div>
+
+
+          <div class="accordion-item">
+            <h4 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="font-size: 1.4em; font-family: 'Hind', sans-serif; background-color: #6a1b9a; color: #fff; gap: 15px;">
+                <strong style="font-weight: bolder;">? </strong> Comment donner mon offrande à distance?
+              </button>
+            </h4>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body" id="lorem">
+                Pour donner votre offrande à distance, vous pouvez utiliser les mobiles money si vous êtes en République Democratique du Congo en effectuant un dépôt sur Mpesa au 082 922 11 73, sur Orange Money au 089 350 84 12, sur Airtel Money au 099 068 17 89 ou par dépôt bancaire chez Equity Bank au numéro 36 - 00021 161200 - 79 USD </div>
+            </div>
+          </div>
+
+          
+          <div class="accordion-item">
+            <h4 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="font-size: 1.4em; font-family: 'Hind', sans-serif; background-color: #6a1b9a; color: #fff; gap: 15px;">
+                <strong style="font-weight: bolder;">? </strong> Où sont situées nos principales extensions?
+              </button>
+            </h4>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body" id="lorem">
+                Lemba sur by pass à Alliance franco congolaise, Mazal</div>
+            </div>
+          </div>
+
+
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+  </article>
+</div>
+
+<!-- footer -->
+<footer class="kilimanjaro_area">
+  <!-- Top Footer Area Start -->
+  <div class="foo_top_header_one section_padding_100_70">
+      <div class="container">
+          <div class="row">
+              <div class="col-12 col-md-6 col-lg-3">
+                  <div class="kilimanjaro_part">
+                      <h5>About Us</h5>
+                      <p>L'ICC est connue pour ses cultes dynamiques et ses messages d'espoir et de transformation. Elle est également active dans la promotion de l'unité et de la réconciliation en République démocratique du Congo.</p>
+                  </div>
+                  <div class="kilimanjaro_part m-top-15">
+                      <h5>Social Links</h5>
+                      <ul class="kilimanjaro_social_links">
+                          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a></li>
+                          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
+                          <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i> Pinterest</a></li>
+                          <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i> YouTube</a></li>
+                          <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> Linkedin</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                  <div class="kilimanjaro_part">
+                      <h5>Tags Widget</h5>
+                      <ul class=" kilimanjaro_widget">
+                          <li><a href="#">Classy</a></li>
+                          <li><a href="#">Blog</a></li>
+                          <li><a href="#">Creative</a></li>
+                          <li><a href="#">One Page</a></li>
+                          <li><a href="#">Multipurpose</a></li>
+                          <li><a href="#">Minimal</a></li>
+                          <li><a href="#">Classic</a></li>
+                          <li><a href="#">Medical</a></li>
+                      </ul>
+                  </div>
+
+                  <div class="kilimanjaro_part m-top-15">
+                      <h5>Important Links</h5>
+                      <ul class="kilimanjaro_links">
+                          <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Terms & Conditions</a></li>
+                          <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>About Licences</a></li>
+                          <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Help & Support</a></li>
+                          <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Careers</a></li>
+                          <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Privacy Policy</a></li>
+                          <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Community & Forum</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                  <div class="kilimanjaro_part">
+                      <h5>Temoignages</h5>
+                      <div class="kilimanjaro_blog_area">
+                          <div class="kilimanjaro_thumb">
+          <img class="img-fluid" src="pictures/logoicc2.JPG" alt="ICC">
+
+                          </div>
+                          <a href="#">"Un mouvement nouveau est entrain de naitre"</a>
+                          <p class="kilimanjaro_date">2 Jan 2023</p>
+                          <p>Gabriel Bigas</p>
+                      </div>
+                      <div class="kilimanjaro_blog_area">
+                          <div class="kilimanjaro_thumb">
+          <img class="img-fluid" src="pictures/doulos.JPG" alt="icc">
+                          </div>
+                          <a href="#">"Un éventail de talent réunit pour un seul nom"</a>
+                          <p class="kilimanjaro_date">7 Avr 2023</p>
+                          <p>Doulos JK</p>
+                      </div>
+                      <div class="kilimanjaro_blog_area">
+                          <div class="kilimanjaro_thumb">
+          <img class="img-fluid" src="pictures/ben.PNG" alt="icc">
+                          </div>
+                          <a href="#">"Une famille plus qu'une église"</a>
+                          <p class="kilimanjaro_date">21 Jui 2023</p>
+                          <p>Ben Makaya</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                  <div class="kilimanjaro_part">
+                      <h5>Quick Contact</h5>
+                      <div class="kilimanjaro_single_contact_info">
+                          <h5>Phone:</h5>
+                          <p>+255 255 54 53 52 <br> +255 255 53 52 51</p>
+                      </div>
+                      <div class="kilimanjaro_single_contact_info">
+                          <h5>Email:</h5>
+                          <p>support@email.com <br> company@email.com</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Footer Bottom Area Start -->
+  <div class=" kilimanjaro_bottom_header_one section_padding_50 text-center">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <p>© All Rights Reserved by <a href="#">Yanice mdl<i class="fa fa-love"></i></a></p>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+<!-- footer -->
+
+
+
+    <script src="assets/bootstrap.bundle.min.js"></script>
+    <script src="assets/cheatsheet.js"></script>
+    <script src="JS/icc.js"></script>
+</body>
+</html>
